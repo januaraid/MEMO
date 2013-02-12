@@ -1,5 +1,7 @@
 package jp.januaraid.android.memo;
 
+import java.util.ArrayList;
+
 import jp.januaraid.android.memo.SwipeDismissListViewTouchListener;
 import android.os.Bundle;
 import android.app.Activity;
@@ -23,9 +25,11 @@ import android.widget.ListView;
 //import android.widget.Toast;
 
 public class MainActivity extends Activity {
-	private ListView mListView;
+	//private ListView mListView;
+	private MyListView mListView;
 	private ArrayAdapter<String> mAdapter;
-	private int cnt;
+	private ArrayList<Integer> mArrayList = new ArrayList<Integer>();;
+	//private int cnt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,20 +45,22 @@ public class MainActivity extends Activity {
         	//異常終了
         	return;
         }
-        Cursor c = sdb.query("T_USER", new String[] {"USER_ID", "NAME"},
+        Cursor c = sdb.query("T_USER", new String[] {"_ID", "NAME"},
         		null, null, null, null, null, null);
         
         //ListViewの処理
         //mListView = (ListView)findViewById(R.id.listView1);
-        mListView = (ListView)findViewById(R.id.listView1);
+        mListView = (MyListView)findViewById(R.id.listView1);
         mAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1);
         mListView.setAdapter(mAdapter);
         boolean isEof = c.moveToFirst();
-        cnt = 0;
+        //cnt = 0;
+        mArrayList.clear();
         while(isEof) {
         	mAdapter.add(c.getString(1));
+        	mArrayList.add(c.getInt(0));
         	isEof = c.moveToNext();
-        	cnt++;
+        	//cnt++;
         }
         sdb.close();
         c.close();
@@ -172,9 +178,14 @@ public class MainActivity extends Activity {
         	//異常終了
         	return;
         }
-    	sdb.execSQL("INSERT INTO T_USER (USER_ID, NAME) VALUES ("+cnt+", '"+str+"')");
-    	cnt++;
+    	sdb.execSQL("INSERT INTO T_USER (NAME) VALUES ('"+str+"')");
+    	Cursor c = sdb.query("T_USER", new String[] {"_ID", "NAME"},
+        		null, null, null, null, null, null);
+    	c.moveToLast();
+    	mArrayList.add(c.getInt(0));
+    	//cnt++;
     	sdb.close();
+    	c.close();
     }
     
     private void DataBaseRemove(int position) {
@@ -192,11 +203,12 @@ public class MainActivity extends Activity {
         	return;
         }
         
-    	sdb.execSQL("delete from T_USER where (USER_ID = '"+position+"');");
-    	for(int i = position; i < cnt; i++) {
-    		sdb.execSQL("update T_USER set USER_ID = '"+i+"' WHERE (USER_ID = '"+(i + 1)+"');");
-    	}
-    	cnt--;
+    	sdb.execSQL("delete from T_USER where (_ID = '"+mArrayList.get(position)+"');");
+    	mArrayList.remove(position);
+    	/*for(int i = position; i < cnt; i++) {
+    		sdb.execSQL("update T_USER set _ID = '"+i+"' WHERE (USER_ID = '"+(i + 1)+"');");
+    	}*/
+    	//cnt--;
     	sdb.close();
     }
 
@@ -222,13 +234,13 @@ class SubOpenHelper extends SQLiteOpenHelper {
 		// テーブルを作成する
 		sql = new StringBuffer();
 		sql.append("CREATE TABLE T_USER (");
-		sql.append(" USER_ID integer primary key,");
+		sql.append(" _ID integer primary key autoincrement,");
 		sql.append(" NAME text NOT NULL");
 		sql.append(")");
 		db.execSQL(sql.toString());
 		
-		db.execSQL("INSERT INTO T_USER (USER_ID, NAME) VALUES (0, 'テスト太郎')");
-		db.execSQL("INSERT INTO T_USER (USER_ID, NAME) VALUES (1, 'テスト花子')");
+		db.execSQL("INSERT INTO T_USER (NAME) VALUES ('テスト太郎')");
+		db.execSQL("INSERT INTO T_USER (NAME) VALUES ('テスト花子')");
 	}
 
 	@Override
