@@ -9,170 +9,335 @@ package jp.januaraid.android.memo;
 
 public final class R {
     public static final class attr {
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int click_remove_id=0x7f01000f;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int collapsed_height=0x7f010000;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int drag_enabled=0x7f01000a;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int drag_handle_id=0x7f01000e;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int drag_scroll_start=0x7f010001;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>onDown</code></td><td>0</td><td></td></tr>
+<tr><td><code>onMove</code></td><td>1</td><td></td></tr>
+<tr><td><code>onLongPress</code></td><td>2</td><td></td></tr>
+</table>
+         */
+        public static final int drag_start_mode=0x7f01000d;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int drop_animation_duration=0x7f010009;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int float_alpha=0x7f010006;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int float_background_color=0x7f010003;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int max_drag_scroll_speed=0x7f010002;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int remove_animation_duration=0x7f010008;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int remove_enabled=0x7f01000c;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>clickRemove</code></td><td>0</td><td></td></tr>
+<tr><td><code>flingRight</code></td><td>1</td><td></td></tr>
+<tr><td><code>flingLeft</code></td><td>2</td><td></td></tr>
+<tr><td><code>slideRight</code></td><td>3</td><td></td></tr>
+<tr><td><code>slideLeft</code></td><td>4</td><td></td></tr>
+</table>
+         */
+        public static final int remove_mode=0x7f010004;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int slide_shuffle_speed=0x7f010007;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int sort_enabled=0x7f01000b;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int track_drag_sort=0x7f010005;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int use_default_controller=0x7f010010;
     }
     public static final class color {
-        public static final int aliceblue=0x7f04001c;
-        public static final int antiquewhite=0x7f04000d;
-        public static final int aqua=0x7f040032;
-        public static final int aquamarine=0x7f040042;
-        public static final int azure=0x7f04001b;
-        public static final int beige=0x7f040053;
-        public static final int bisque=0x7f040010;
-        public static final int black=0x7f040000;
-        public static final int blanchedalmond=0x7f04000f;
-        public static final int blue=0x7f040027;
-        public static final int blueviolet=0x7f040088;
-        public static final int brown=0x7f040068;
-        public static final int burlywood=0x7f040058;
-        public static final int cadetblue=0x7f040037;
-        public static final int chartreuse=0x7f040048;
-        public static final int chocolate=0x7f040063;
-        public static final int coral=0x7f040070;
-        public static final int cornflowerblue=0x7f040029;
-        public static final int cornsilk=0x7f040052;
-        public static final int crimson=0x7f040074;
-        public static final int cyan=0x7f040031;
-        public static final int darkblue=0x7f040025;
-        public static final int darkcyan=0x7f040038;
-        public static final int darkgoldenrod=0x7f040062;
-        public static final int darkgray=0x7f040003;
-        public static final int darkgreen=0x7f04003b;
-        public static final int darkkhaki=0x7f040050;
-        public static final int darkmagenta=0x7f040084;
-        public static final int darkolivegreen=0x7f04004d;
-        public static final int darkorange=0x7f04005f;
-        public static final int darkorchid=0x7f040082;
-        public static final int darkred=0x7f040067;
-        public static final int darksalmon=0x7f04006c;
-        public static final int darkseagreen=0x7f040041;
-        public static final int darkslateblue=0x7f040087;
-        public static final int darkslategray=0x7f04003a;
-        public static final int darkturquoise=0x7f040035;
-        public static final int darkviolet=0x7f040083;
-        public static final int deeppink=0x7f040076;
-        public static final int deepskyblue=0x7f04002a;
-        public static final int dimgray=0x7f040001;
-        public static final int dodgerblue=0x7f040028;
-        public static final int firebrick=0x7f040069;
-        public static final int floralwhite=0x7f04000b;
-        public static final int forestgreen=0x7f04003d;
-        public static final int fuchsia=0x7f04007d;
-        public static final int gainsboro=0x7f040006;
-        public static final int ghostwhite=0x7f04000a;
-        public static final int gold=0x7f04005c;
-        public static final int goldenrod=0x7f040060;
-        public static final int gray=0x7f040002;
-        public static final int green=0x7f04003c;
-        public static final int greenyellow=0x7f040049;
-        public static final int honeydew=0x7f040019;
-        public static final int hotpink=0x7f040077;
-        public static final int indianred=0x7f04006a;
-        public static final int indigo=0x7f040086;
-        public static final int ivory=0x7f040018;
-        public static final int khaki=0x7f04005a;
-        public static final int lavender=0x7f04001d;
-        public static final int lavenderblush=0x7f040015;
-        public static final int lawngreen=0x7f040047;
-        public static final int lemonchiffon=0x7f040056;
-        public static final int lightblue=0x7f04002d;
-        public static final int lightcoral=0x7f04006d;
-        public static final int lightcyan=0x7f040030;
-        public static final int lightgoldenrodyellow=0x7f040055;
-        public static final int lightgreen=0x7f040044;
-        public static final int lightgrey=0x7f040005;
-        public static final int lightpink=0x7f04007a;
-        public static final int lightsalmon=0x7f04006f;
-        public static final int lightseagreen=0x7f040036;
-        public static final int lightskyblue=0x7f04002b;
-        public static final int lightslategray=0x7f04001f;
-        public static final int lightsteelblue=0x7f04001e;
-        public static final int lightyellow=0x7f040054;
-        public static final int lime=0x7f04004a;
-        public static final int limegreen=0x7f04004b;
-        public static final int linen=0x7f04000c;
-        public static final int magenta=0x7f04007c;
-        public static final int maroon=0x7f040066;
-        public static final int mediumaquamarine=0x7f040040;
-        public static final int mediumblue=0x7f040026;
-        public static final int mediumorchid=0x7f040081;
-        public static final int mediumpurple=0x7f040089;
-        public static final int mediumseagreen=0x7f04003f;
-        public static final int mediumslateblue=0x7f04008b;
-        public static final int mediumspringgreen=0x7f040046;
-        public static final int mediumturquoise=0x7f040034;
-        public static final int mediumvioletred=0x7f040075;
-        public static final int midnightblue=0x7f040023;
-        public static final int mintcream=0x7f04001a;
-        public static final int mistyrose=0x7f040014;
-        public static final int moccasin=0x7f040011;
-        public static final int navajowhite=0x7f040012;
-        public static final int navy=0x7f040024;
-        public static final int oldlace=0x7f040017;
-        public static final int olive=0x7f04004f;
-        public static final int olivedrab=0x7f04004e;
-        public static final int orange=0x7f04005d;
-        public static final int orangered=0x7f040072;
-        public static final int orchid=0x7f040080;
-        public static final int palegoldenrod=0x7f040051;
-        public static final int palegreen=0x7f040043;
-        public static final int paleturquoise=0x7f04002f;
-        public static final int palevioletred=0x7f040078;
-        public static final int papayawhip=0x7f04000e;
-        public static final int peachpuff=0x7f040013;
-        public static final int peru=0x7f040061;
-        public static final int pink=0x7f040079;
-        public static final int plum=0x7f04007f;
-        public static final int powderblue=0x7f04002e;
-        public static final int purple=0x7f040085;
-        public static final int red=0x7f040073;
-        public static final int rosybrown=0x7f04006b;
-        public static final int royalblue=0x7f040022;
-        public static final int saddlebrown=0x7f040065;
-        public static final int salmon=0x7f04006e;
-        public static final int sandybrown=0x7f04005e;
-        public static final int seagreen=0x7f04003e;
-        public static final int seashell=0x7f040016;
-        public static final int sienna=0x7f040064;
-        public static final int silver=0x7f040004;
-        public static final int skyblue=0x7f04002c;
-        public static final int slateblue=0x7f04008a;
-        public static final int slategray=0x7f040020;
-        public static final int snow=0x7f040009;
-        public static final int springgreen=0x7f040045;
-        public static final int steelblue=0x7f040021;
-        public static final int tan=0x7f040059;
-        public static final int teal=0x7f040039;
-        public static final int thistle=0x7f04007b;
-        public static final int tomato=0x7f040071;
-        public static final int turquoise=0x7f040033;
-        public static final int violet=0x7f04007e;
-        public static final int wheat=0x7f040057;
-        public static final int white=0x7f040008;
-        public static final int whitesmoke=0x7f040007;
-        public static final int yellow=0x7f04005b;
-        public static final int yellowgreen=0x7f04004c;
+        public static final int aliceblue=0x7f05001c;
+        public static final int antiquewhite=0x7f05000d;
+        public static final int aqua=0x7f050032;
+        public static final int aquamarine=0x7f050042;
+        public static final int azure=0x7f05001b;
+        public static final int beige=0x7f050053;
+        public static final int bisque=0x7f050010;
+        public static final int black=0x7f050000;
+        public static final int blanchedalmond=0x7f05000f;
+        public static final int blue=0x7f050027;
+        public static final int blueviolet=0x7f050088;
+        public static final int brown=0x7f050068;
+        public static final int burlywood=0x7f050058;
+        public static final int cadetblue=0x7f050037;
+        public static final int chartreuse=0x7f050048;
+        public static final int chocolate=0x7f050063;
+        public static final int coral=0x7f050070;
+        public static final int cornflowerblue=0x7f050029;
+        public static final int cornsilk=0x7f050052;
+        public static final int crimson=0x7f050074;
+        public static final int cyan=0x7f050031;
+        public static final int darkblue=0x7f050025;
+        public static final int darkcyan=0x7f050038;
+        public static final int darkgoldenrod=0x7f050062;
+        public static final int darkgray=0x7f050003;
+        public static final int darkgreen=0x7f05003b;
+        public static final int darkkhaki=0x7f050050;
+        public static final int darkmagenta=0x7f050084;
+        public static final int darkolivegreen=0x7f05004d;
+        public static final int darkorange=0x7f05005f;
+        public static final int darkorchid=0x7f050082;
+        public static final int darkred=0x7f050067;
+        public static final int darksalmon=0x7f05006c;
+        public static final int darkseagreen=0x7f050041;
+        public static final int darkslateblue=0x7f050087;
+        public static final int darkslategray=0x7f05003a;
+        public static final int darkturquoise=0x7f050035;
+        public static final int darkviolet=0x7f050083;
+        public static final int deeppink=0x7f050076;
+        public static final int deepskyblue=0x7f05002a;
+        public static final int dimgray=0x7f050001;
+        public static final int dodgerblue=0x7f050028;
+        public static final int firebrick=0x7f050069;
+        public static final int floralwhite=0x7f05000b;
+        public static final int forestgreen=0x7f05003d;
+        public static final int fuchsia=0x7f05007d;
+        public static final int gainsboro=0x7f050006;
+        public static final int ghostwhite=0x7f05000a;
+        public static final int gold=0x7f05005c;
+        public static final int goldenrod=0x7f050060;
+        public static final int gray=0x7f050002;
+        public static final int green=0x7f05003c;
+        public static final int greenyellow=0x7f050049;
+        public static final int honeydew=0x7f050019;
+        public static final int hotpink=0x7f050077;
+        public static final int indianred=0x7f05006a;
+        public static final int indigo=0x7f050086;
+        public static final int ivory=0x7f050018;
+        public static final int khaki=0x7f05005a;
+        public static final int lavender=0x7f05001d;
+        public static final int lavenderblush=0x7f050015;
+        public static final int lawngreen=0x7f050047;
+        public static final int lemonchiffon=0x7f050056;
+        public static final int lightblue=0x7f05002d;
+        public static final int lightcoral=0x7f05006d;
+        public static final int lightcyan=0x7f050030;
+        public static final int lightgoldenrodyellow=0x7f050055;
+        public static final int lightgreen=0x7f050044;
+        public static final int lightgrey=0x7f050005;
+        public static final int lightpink=0x7f05007a;
+        public static final int lightsalmon=0x7f05006f;
+        public static final int lightseagreen=0x7f050036;
+        public static final int lightskyblue=0x7f05002b;
+        public static final int lightslategray=0x7f05001f;
+        public static final int lightsteelblue=0x7f05001e;
+        public static final int lightyellow=0x7f050054;
+        public static final int lime=0x7f05004a;
+        public static final int limegreen=0x7f05004b;
+        public static final int linen=0x7f05000c;
+        public static final int magenta=0x7f05007c;
+        public static final int maroon=0x7f050066;
+        public static final int mediumaquamarine=0x7f050040;
+        public static final int mediumblue=0x7f050026;
+        public static final int mediumorchid=0x7f050081;
+        public static final int mediumpurple=0x7f050089;
+        public static final int mediumseagreen=0x7f05003f;
+        public static final int mediumslateblue=0x7f05008b;
+        public static final int mediumspringgreen=0x7f050046;
+        public static final int mediumturquoise=0x7f050034;
+        public static final int mediumvioletred=0x7f050075;
+        public static final int midnightblue=0x7f050023;
+        public static final int mintcream=0x7f05001a;
+        public static final int mistyrose=0x7f050014;
+        public static final int moccasin=0x7f050011;
+        public static final int navajowhite=0x7f050012;
+        public static final int navy=0x7f050024;
+        public static final int oldlace=0x7f050017;
+        public static final int olive=0x7f05004f;
+        public static final int olivedrab=0x7f05004e;
+        public static final int orange=0x7f05005d;
+        public static final int orangered=0x7f050072;
+        public static final int orchid=0x7f050080;
+        public static final int palegoldenrod=0x7f050051;
+        public static final int palegreen=0x7f050043;
+        public static final int paleturquoise=0x7f05002f;
+        public static final int palevioletred=0x7f050078;
+        public static final int papayawhip=0x7f05000e;
+        public static final int peachpuff=0x7f050013;
+        public static final int peru=0x7f050061;
+        public static final int pink=0x7f050079;
+        public static final int plum=0x7f05007f;
+        public static final int powderblue=0x7f05002e;
+        public static final int purple=0x7f050085;
+        public static final int red=0x7f050073;
+        public static final int rosybrown=0x7f05006b;
+        public static final int royalblue=0x7f050022;
+        public static final int saddlebrown=0x7f050065;
+        public static final int salmon=0x7f05006e;
+        public static final int sandybrown=0x7f05005e;
+        public static final int seagreen=0x7f05003e;
+        public static final int seashell=0x7f050016;
+        public static final int sienna=0x7f050064;
+        public static final int silver=0x7f050004;
+        public static final int skyblue=0x7f05002c;
+        public static final int slateblue=0x7f05008a;
+        public static final int slategray=0x7f050020;
+        public static final int snow=0x7f050009;
+        public static final int springgreen=0x7f050045;
+        public static final int steelblue=0x7f050021;
+        public static final int tan=0x7f050059;
+        public static final int teal=0x7f050039;
+        public static final int thistle=0x7f05007b;
+        public static final int tomato=0x7f050071;
+        public static final int turquoise=0x7f050033;
+        public static final int violet=0x7f05007e;
+        public static final int wheat=0x7f050057;
+        public static final int white=0x7f050008;
+        public static final int whitesmoke=0x7f050007;
+        public static final int yellow=0x7f05005b;
+        public static final int yellowgreen=0x7f05004c;
+    }
+    public static final class dimen {
+        public static final int item_height=0x7f060000;
+        public static final int section_div_height=0x7f060001;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
-        public static final int ls_item_selector=0x7f020001;
+        public static final int drag=0x7f020000;
+        public static final int ic_launcher=0x7f020001;
+        public static final int ic_menu_edit=0x7f020002;
+        public static final int ls_item_selector=0x7f020003;
     }
     public static final class id {
-        public static final int button1=0x7f080002;
-        public static final int linearLayout2=0x7f080001;
-        public static final int listView1=0x7f080000;
-        public static final int menu_settings=0x7f080003;
+        public static final int AddItem=0x7f04000c;
+        public static final int clickRemove=0x7f040000;
+        public static final int click_remove=0x7f040009;
+        public static final int drag_handle=0x7f040008;
+        public static final int flingLeft=0x7f040002;
+        public static final int flingRight=0x7f040001;
+        public static final int listView1=0x7f04000a;
+        public static final int onDown=0x7f040005;
+        public static final int onLongPress=0x7f040007;
+        public static final int onMove=0x7f040006;
+        public static final int slideLeft=0x7f040004;
+        public static final int slideRight=0x7f040003;
+        public static final int text=0x7f04000b;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
+        public static final int list_item_handle_left=0x7f030001;
     }
     public static final class menu {
-        public static final int activity_main=0x7f070000;
+        public static final int activity_main=0x7f090000;
     }
     public static final class string {
-        public static final int AddItem=0x7f050003;
-        public static final int app_name=0x7f050000;
-        public static final int hello_world=0x7f050001;
-        public static final int menu_settings=0x7f050002;
+        public static final int AddItem=0x7f070003;
+        public static final int app_name=0x7f070000;
+        public static final int hello_world=0x7f070001;
+        public static final int menu_settings=0x7f070002;
     }
     public static final class style {
         /** 
@@ -196,10 +361,312 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f060000;
+        public static final int AppBaseTheme=0x7f080000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f060001;
+        public static final int AppTheme=0x7f080001;
     }
+    public static final class styleable {
+        /** Attributes that can be used with a DragSortListView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #DragSortListView_click_remove_id jp.januaraid.android.memo:click_remove_id}</code></td><td></td></tr>
+           <tr><td><code>{@link #DragSortListView_collapsed_height jp.januaraid.android.memo:collapsed_height}</code></td><td></td></tr>
+           <tr><td><code>{@link #DragSortListView_drag_enabled jp.januaraid.android.memo:drag_enabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #DragSortListView_drag_handle_id jp.januaraid.android.memo:drag_handle_id}</code></td><td></td></tr>
+           <tr><td><code>{@link #DragSortListView_drag_scroll_start jp.januaraid.android.memo:drag_scroll_start}</code></td><td></td></tr>
+           <tr><td><code>{@link #DragSortListView_drag_start_mode jp.januaraid.android.memo:drag_start_mode}</code></td><td></td></tr>
+           <tr><td><code>{@link #DragSortListView_drop_animation_duration jp.januaraid.android.memo:drop_animation_duration}</code></td><td></td></tr>
+           <tr><td><code>{@link #DragSortListView_float_alpha jp.januaraid.android.memo:float_alpha}</code></td><td></td></tr>
+           <tr><td><code>{@link #DragSortListView_float_background_color jp.januaraid.android.memo:float_background_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #DragSortListView_max_drag_scroll_speed jp.januaraid.android.memo:max_drag_scroll_speed}</code></td><td></td></tr>
+           <tr><td><code>{@link #DragSortListView_remove_animation_duration jp.januaraid.android.memo:remove_animation_duration}</code></td><td></td></tr>
+           <tr><td><code>{@link #DragSortListView_remove_enabled jp.januaraid.android.memo:remove_enabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #DragSortListView_remove_mode jp.januaraid.android.memo:remove_mode}</code></td><td></td></tr>
+           <tr><td><code>{@link #DragSortListView_slide_shuffle_speed jp.januaraid.android.memo:slide_shuffle_speed}</code></td><td></td></tr>
+           <tr><td><code>{@link #DragSortListView_sort_enabled jp.januaraid.android.memo:sort_enabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #DragSortListView_track_drag_sort jp.januaraid.android.memo:track_drag_sort}</code></td><td></td></tr>
+           <tr><td><code>{@link #DragSortListView_use_default_controller jp.januaraid.android.memo:use_default_controller}</code></td><td></td></tr>
+           </table>
+           @see #DragSortListView_click_remove_id
+           @see #DragSortListView_collapsed_height
+           @see #DragSortListView_drag_enabled
+           @see #DragSortListView_drag_handle_id
+           @see #DragSortListView_drag_scroll_start
+           @see #DragSortListView_drag_start_mode
+           @see #DragSortListView_drop_animation_duration
+           @see #DragSortListView_float_alpha
+           @see #DragSortListView_float_background_color
+           @see #DragSortListView_max_drag_scroll_speed
+           @see #DragSortListView_remove_animation_duration
+           @see #DragSortListView_remove_enabled
+           @see #DragSortListView_remove_mode
+           @see #DragSortListView_slide_shuffle_speed
+           @see #DragSortListView_sort_enabled
+           @see #DragSortListView_track_drag_sort
+           @see #DragSortListView_use_default_controller
+         */
+        public static final int[] DragSortListView = {
+            0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003,
+            0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007,
+            0x7f010008, 0x7f010009, 0x7f01000a, 0x7f01000b,
+            0x7f01000c, 0x7f01000d, 0x7f01000e, 0x7f01000f,
+            0x7f010010
+        };
+        /**
+          <p>This symbol is the offset where the {@link jp.januaraid.android.memo.R.attr#click_remove_id}
+          attribute's value can be found in the {@link #DragSortListView} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:click_remove_id
+        */
+        public static final int DragSortListView_click_remove_id = 15;
+        /**
+          <p>This symbol is the offset where the {@link jp.januaraid.android.memo.R.attr#collapsed_height}
+          attribute's value can be found in the {@link #DragSortListView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:collapsed_height
+        */
+        public static final int DragSortListView_collapsed_height = 0;
+        /**
+          <p>This symbol is the offset where the {@link jp.januaraid.android.memo.R.attr#drag_enabled}
+          attribute's value can be found in the {@link #DragSortListView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:drag_enabled
+        */
+        public static final int DragSortListView_drag_enabled = 10;
+        /**
+          <p>This symbol is the offset where the {@link jp.januaraid.android.memo.R.attr#drag_handle_id}
+          attribute's value can be found in the {@link #DragSortListView} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:drag_handle_id
+        */
+        public static final int DragSortListView_drag_handle_id = 14;
+        /**
+          <p>This symbol is the offset where the {@link jp.januaraid.android.memo.R.attr#drag_scroll_start}
+          attribute's value can be found in the {@link #DragSortListView} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:drag_scroll_start
+        */
+        public static final int DragSortListView_drag_scroll_start = 1;
+        /**
+          <p>This symbol is the offset where the {@link jp.januaraid.android.memo.R.attr#drag_start_mode}
+          attribute's value can be found in the {@link #DragSortListView} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>onDown</code></td><td>0</td><td></td></tr>
+<tr><td><code>onMove</code></td><td>1</td><td></td></tr>
+<tr><td><code>onLongPress</code></td><td>2</td><td></td></tr>
+</table>
+          @attr name android:drag_start_mode
+        */
+        public static final int DragSortListView_drag_start_mode = 13;
+        /**
+          <p>This symbol is the offset where the {@link jp.januaraid.android.memo.R.attr#drop_animation_duration}
+          attribute's value can be found in the {@link #DragSortListView} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:drop_animation_duration
+        */
+        public static final int DragSortListView_drop_animation_duration = 9;
+        /**
+          <p>This symbol is the offset where the {@link jp.januaraid.android.memo.R.attr#float_alpha}
+          attribute's value can be found in the {@link #DragSortListView} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:float_alpha
+        */
+        public static final int DragSortListView_float_alpha = 6;
+        /**
+          <p>This symbol is the offset where the {@link jp.januaraid.android.memo.R.attr#float_background_color}
+          attribute's value can be found in the {@link #DragSortListView} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:float_background_color
+        */
+        public static final int DragSortListView_float_background_color = 3;
+        /**
+          <p>This symbol is the offset where the {@link jp.januaraid.android.memo.R.attr#max_drag_scroll_speed}
+          attribute's value can be found in the {@link #DragSortListView} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:max_drag_scroll_speed
+        */
+        public static final int DragSortListView_max_drag_scroll_speed = 2;
+        /**
+          <p>This symbol is the offset where the {@link jp.januaraid.android.memo.R.attr#remove_animation_duration}
+          attribute's value can be found in the {@link #DragSortListView} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:remove_animation_duration
+        */
+        public static final int DragSortListView_remove_animation_duration = 8;
+        /**
+          <p>This symbol is the offset where the {@link jp.januaraid.android.memo.R.attr#remove_enabled}
+          attribute's value can be found in the {@link #DragSortListView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:remove_enabled
+        */
+        public static final int DragSortListView_remove_enabled = 12;
+        /**
+          <p>This symbol is the offset where the {@link jp.januaraid.android.memo.R.attr#remove_mode}
+          attribute's value can be found in the {@link #DragSortListView} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>clickRemove</code></td><td>0</td><td></td></tr>
+<tr><td><code>flingRight</code></td><td>1</td><td></td></tr>
+<tr><td><code>flingLeft</code></td><td>2</td><td></td></tr>
+<tr><td><code>slideRight</code></td><td>3</td><td></td></tr>
+<tr><td><code>slideLeft</code></td><td>4</td><td></td></tr>
+</table>
+          @attr name android:remove_mode
+        */
+        public static final int DragSortListView_remove_mode = 4;
+        /**
+          <p>This symbol is the offset where the {@link jp.januaraid.android.memo.R.attr#slide_shuffle_speed}
+          attribute's value can be found in the {@link #DragSortListView} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:slide_shuffle_speed
+        */
+        public static final int DragSortListView_slide_shuffle_speed = 7;
+        /**
+          <p>This symbol is the offset where the {@link jp.januaraid.android.memo.R.attr#sort_enabled}
+          attribute's value can be found in the {@link #DragSortListView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:sort_enabled
+        */
+        public static final int DragSortListView_sort_enabled = 11;
+        /**
+          <p>This symbol is the offset where the {@link jp.januaraid.android.memo.R.attr#track_drag_sort}
+          attribute's value can be found in the {@link #DragSortListView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:track_drag_sort
+        */
+        public static final int DragSortListView_track_drag_sort = 5;
+        /**
+          <p>This symbol is the offset where the {@link jp.januaraid.android.memo.R.attr#use_default_controller}
+          attribute's value can be found in the {@link #DragSortListView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:use_default_controller
+        */
+        public static final int DragSortListView_use_default_controller = 16;
+    };
 }

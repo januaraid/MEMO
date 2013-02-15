@@ -3,7 +3,7 @@
 
     <string name="app_name">MEMO</string>
     <string name="hello_world">Hello world!</string>
-    <string name="menu_settings">Settings</string>
+    <string name="menu_settings">AddItem</string>
     <string name="AddItem">項目の追加</string>
 
 </resources>

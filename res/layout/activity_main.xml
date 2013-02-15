@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.mobeta.android.dslv.DragSortListView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dslv="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/listView1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" 
-    >
-
-    <jp.januaraid.android.memo.MyListView
+    android:orientation="vertical"
+    android:background="@color/silver"
+    android:dividerHeight="1dp"
+    android:divider="@color/maroon"
+    dslv:float_alpha="0.6" >
+    
+    <!-- <com.mobeta.android.dslv.DragSortListView
         android:id="@+id/listView1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_margin="5dp"
-        android:background="@drawable/ls_item_selector"
-        android:listSelector="@drawable/ls_item_selector"
         android:layout_weight="1"
-        />
+        dslv:float_alpha="0.6"/>
  
     <LinearLayout
         android:id="@+id/linearLayout2"
@@ -32,7 +36,7 @@
     
         
         
-    </LinearLayout>
+    </LinearLayout>-->
 
 
-</LinearLayout>
+</com.mobeta.android.dslv.DragSortListView>
